@@ -10,8 +10,5 @@
         <module name="AOP" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="AOP" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

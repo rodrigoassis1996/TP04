@@ -22,7 +22,7 @@ public class Main {
 //		System.out.println(p.toString());
 
     Operacao o = context.getBean(Operacao.class);
-		o.alterarPessoa(p, "João", "10/09/1996", "Virgem", historicoList);
+    o.alterarPessoa(p, "João", "10/09/1996", "Virgem", historicoList);
     o.alterarPessoa(p, "João", "10/09/1996", "Touro", historicoList);
     o.alterarPessoa(p, "Maria", "10/07/1987", "Libra", historicoList);
 //    System.out.println(p.toString());
