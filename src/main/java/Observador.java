@@ -16,6 +16,32 @@ import org.aspectj.lang.annotation.Before;
 @Aspect
 public class Observador {
 
+	@Before("execution(* Pessoa.setNome(*))")
+	public void logAntesSetNome(JoinPoint joinPoint) {
+		System.out.println("------");
+		System.out.println("Antes de executar o método: " + joinPoint.getSignature().getName());
+		System.out.println("Tinha-se o objeto " + joinPoint.getArgs()[0]);
+	}
+
+	@Around("execution(* Pessoa.setNome(..))")
+	public Object logEmSetNome(ProceedingJoinPoint pjp) throws Throwable {
+		System.out.println("------");
+		System.out.println("Antes do método: " + pjp.getSignature().getName());
+		Object o = pjp.proceed();
+		System.out.println("Depois do método: " + pjp.getSignature().getName());
+		System.out.println("------");
+
+		return o;
+	}
+
+	@After("execution(* Pessoa.setNome(..))")
+	public void logAposSetNome(JoinPoint joinPoint) {
+		System.out.println("------");
+		System.out.println("Após executar o método: " + joinPoint.getSignature().getName());
+		System.out.println("Tinha-se o objeto " + joinPoint.getArgs()[0]);
+		System.out.println("------");
+	}
+
 	@Before("execution(* Operacao.alterarPessoa(..))")
 	public void logAntesAlterarPessoa(JoinPoint joinPoint) {
 		System.out.println("------");
@@ -23,40 +49,4 @@ public class Observador {
 		System.out.println("Tinha-se o objeto " + joinPoint.getArgs()[0]);
 	}
 
-//	@After("execution(* Operacao.alterarPessoa(..))")
-//	public void logAposAlterarPessoa(JoinPoint joinPoint) {
-//		System.out.println("------");
-//		System.out.println("Após executar o método: " + joinPoint.getSignature().getName());
-//		System.out.println("Tinha-se o objeto " + joinPoint.getArgs()[0]);
-//		System.out.println("que virou " + joinPoint.getThis());
-//		System.out.println("------");
-//	}
-
-	@AfterReturning(pointcut = "execution(* Operacao.alterarPessoa(..))", returning="result")
-	public void logAposRetorno(JoinPoint joinPoint, Object result) {
-		System.out.println("que virou " + result);
-		System.out.println("------");
-	}
-
-	@Around("execution(* Operacao.somar(..))")
-	public Object logEmVoltaSomar(ProceedingJoinPoint pjp) throws Throwable {
-		System.out.println("------");
-		System.out.println("Antes do método: " + pjp.getSignature().getName());
-		Object o = pjp.proceed();
-		System.out.println("Depois do método: " + pjp.getSignature().getName());
-		System.out.println("------");
-		
-		return o; 
-	}
-	
-	@AfterThrowing(
-			pointcut = "execution(* Operacao.excecao(..))",  
-            throwing= "error")  
-	public void logAposGerarExcecao(JoinPoint joinPoint,Throwable error) {
-		System.out.println("------");
-		System.out.println("Após o retorno do método: " + joinPoint.getSignature().getName());
-		System.out.println("Erro: " + error.getMessage());
-		System.out.println("------");
-	}
-	
 }

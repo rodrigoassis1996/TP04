@@ -1,12 +1,12 @@
 package main.java;
 
-import lombok.Getter;
-import lombok.Setter;
+ import lombok.Getter;
+ import lombok.Setter;
 
 import java.util.Calendar;
 
-@Getter
-@Setter
+ @Getter
+ @Setter
 
 /**
  * Created by usuario on 24/09/2019.
