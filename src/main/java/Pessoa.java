@@ -18,12 +18,44 @@ public class Pessoa {
   private String dataNascimento;
   private String signo;
 
-  public Pessoa(String cpf, String nome, String dataNascimento, String signo) {
-    this.cpf = cpf;
-    this.nome = nome;
-    this.dataNascimento = dataNascimento;
-    this.signo = signo;
-  }
+//  public Pessoa(String cpf, String nome, String dataNascimento, String signo) {
+//    this.cpf = cpf;
+//    this.nome = nome;
+//    this.dataNascimento = dataNascimento;
+//    this.signo = signo;
+//  }
+
+ public String getCpfPessoa() {
+     return cpf;
+ }
+
+ public String getNomePessoa() {
+     return nome;
+ }
+
+ public String getDataNascimentoPessoa() {
+     return dataNascimento;
+ }
+
+ public String getSignoPessoa() {
+     return signo;
+ }
+
+ public void setCpfPessoa(String cpf) {
+     this.cpf = cpf;
+ }
+
+ public void setNomePessoa(String nome) {
+     this.nome = nome;
+ }
+
+ public void setDataNascimentoPessoa(String dataNascimento) {
+     this.dataNascimento = dataNascimento;
+ }
+
+ public void setSignoPessoa(String signo) {
+     this.signo = signo;
+ }
 
   @Override
   public String toString()

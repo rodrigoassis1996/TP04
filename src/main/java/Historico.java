@@ -10,13 +10,11 @@ public class Historico {
   private String atributo;
   private String valorAnterior;
   private String valorAtual;
-  private String cpfPessoa;
 
-  public Historico(String atributo, String valorAnterior, String valorAtual, String cpfPessoa) {
+  public Historico(String atributo, String valorAnterior, String valorAtual) {
     this.atributo = atributo;
     this.valorAnterior = valorAnterior;
     this.valorAtual = valorAtual;
-    this.cpfPessoa = cpfPessoa;
   }
 
   @Override
@@ -26,7 +24,6 @@ public class Historico {
             "atributo= '" + atributo + '\'' +
             ", Valor Anterior= " + valorAnterior +
             ", Valor Atual= " + valorAtual +
-            ", CPF Pessoa= " + cpfPessoa +
             '}';
   }
 }
