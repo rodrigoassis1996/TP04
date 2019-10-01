@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d8e32d4-0ce5-4737-bc81-7a506140913c" name="Default Changelist" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AOP.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Historico.java" afterPath="$PROJECT_DIR$/src/main/java/Historico.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Observador.java" afterPath="$PROJECT_DIR$/src/main/java/Observador.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Operacao.java" afterPath="$PROJECT_DIR$/src/main/java/Operacao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Pessoa.java" afterPath="$PROJECT_DIR$/src/main/java/Pessoa.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/Beans.xml" afterPath="$PROJECT_DIR$/src/main/resources/Beans.xml" />
+    <list default="true" id="0d8e32d4-0ce5-4737-bc81-7a506140913c" name="Default Changelist" comment="Alteração na instanciação da classe Pessoa para o observador conseguir rastrear.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/Historico.class" afterPath="$PROJECT_DIR$/target/classes/main/java/Historico.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/Main.class" afterPath="$PROJECT_DIR$/target/classes/main/java/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/Observador.class" afterPath="$PROJECT_DIR$/target/classes/main/java/Observador.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/Operacao.class" afterPath="$PROJECT_DIR$/target/classes/main/java/Operacao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/Pessoa.class" afterPath="$PROJECT_DIR$/target/classes/main/java/Pessoa.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/Beans.xml" afterPath="$PROJECT_DIR$/target/classes/Beans.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -673,12 +669,20 @@
       <option name="presentableId" value="Default" />
       <updated>1569094837010</updated>
       <workItem from="1569363896244" duration="6117000" />
-      <workItem from="1569887003001" duration="3074000" />
+      <workItem from="1569887003001" duration="3141000" />
     </task>
+    <task id="LOCAL-00001" summary="Alteração na instanciação da classe Pessoa para o observador conseguir rastrear.">
+      <created>1569893231670</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569893231670</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9191000" />
+    <option name="totallyTimeSpent" value="9258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -740,6 +744,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Alteração na instanciação da classe Pessoa para o observador conseguir rastrear." />
+    <option name="LAST_COMMIT_MESSAGE" value="Alteração na instanciação da classe Pessoa para o observador conseguir rastrear." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

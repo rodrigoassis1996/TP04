@@ -8,7 +8,7 @@
  
 	<aop:aspectj-autoproxy />
  
-	<bean id="operacao" class="main.java.Operacao" />
+	<bean id="pessoa" class="main.java.Pessoa" />
  
 	<!-- Aspect -->
 	<bean id="observador" class="main.java.Observador" />
